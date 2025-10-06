@@ -1,6 +1,28 @@
 <template>
   <div>
-    what
+    <!-- <div><button @click="clickme='Home'">show</button></div>
+    <div>
+      <KeepAlive>
+        <component :is="clickme"></component>
+      </KeepAlive>
+    </div> -->
+
+    <div><router-link to="/home">home</router-link></div>
+    <div><router-link to="/body">body</router-link></div>
+    <hr>
+    <div>
+      <router-view>
+        
+      </router-view>
+    </div>
   </div>
-  <div class="bg-red-900 text-blue-500">this is a testing</div>
 </template>
+<script>
+export default {
+  data(){
+    return{
+      clickme:''
+    }
+  }
+}
+</script>
