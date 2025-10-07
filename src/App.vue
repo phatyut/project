@@ -1,28 +1,27 @@
 <template>
-  <div>
-    <!-- <div><button @click="clickme='Home'">show</button></div>
-    <div>
-      <KeepAlive>
-        <component :is="clickme"></component>
-      </KeepAlive>
-    </div> -->
-
-    <div><router-link to="/home">home</router-link></div>
-    <div><router-link to="/body">body</router-link></div>
-    <hr>
-    <div>
-      <router-view>
-        
-      </router-view>
-    </div>
+  <div class="bg-blue-300 flex flex-col" >
+      <div class="relative w-full flex justify-center items-center"><Head></Head></div>
+      <div class="relative w-full flex justify-center items-center "><Menu></Menu></div>
+      <div class="relative w-full flex justify-center items-center ">
+        <Body></Body>
+        </div>
+       <div>{{ counter }}</div>
+       <div><button @click="clickcounter">count</button></div>
   </div>
 </template>
 <script>
+
 export default {
+  
   data(){
     return{
-      clickme:''
+      counter:0
+    }
+  },methods:{
+    clickcounter(){
+      this.counter++;
     }
   }
+
 }
 </script>
