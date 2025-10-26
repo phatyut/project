@@ -12,9 +12,9 @@
                         <div><Label>Province: <input type="text"></Label></div>
                         
                 </div>
-                <div class=" absolute right-7 bottom-7">          
+                <div class=" relative flex justify-end top-10">          
                         <div>
-                            <router-link to="./home" class="bg-black hover:bg-green-700 px-7 py-2 text-white text-center rounded-[2px] text-shadow-regal-blue text-shadow-lg/40 text-shadow-red-700" >
+                            <router-link to="./home" class="bg-black hover:bg-green-700 pb-1 px-1  text-white text-center rounded-[2px] text-shadow-regal-blue text-shadow-lg/40 text-shadow-red-700" >
                                  exit
                             </router-link>
                         </div>

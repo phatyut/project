@@ -1,12 +1,13 @@
 <template>
     <div class="w-[80%]  flex justify-between items-center" >
         <div><img src="../../images/ktalogo.png" alt="ktalogo" class="w-[200px]"></div>
-        <div class="flex flex-rwo border-gray-500 border px-3.5 overflow-hidden rounded-[4px] gap-x-3.5  font-medium">
-            <div class="bg-white">    
-                <router-link to="/login" class="">LogIn</router-link>
+        <div class=" border flex bg-black rounded-[30px]">
+            <div class="bg-white px-2.5 rounded-[30px] font-serif text-[12px] flex justify-items-center items-center 
+                        hover:bg-gray-400">    
+                <router-link to="/login" class="">Log in</router-link>
             </div>
-            <div>
-                <router-link to="/signup">Sign Up</router-link>
+            <div class= "bg-white px-2.5 rounded-[30px] font-serif text-[12px] flex justify-items-center items-center">
+                <router-link to="/signup">Signup</router-link>
             </div>
         </div>
     </div>

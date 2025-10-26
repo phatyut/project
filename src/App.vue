@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-blue-300 flex flex-col gap-y-7" >
+  <div class="bg-blue-300 flex flex-col gap-y-7 dark:bg-black dark:text-white" >
       <div class="relative w-full flex justify-center items-center"><Head></Head></div>
       <div class="relative w-full flex justify-center items-center shadow shadow-blue-100 "><Menu></Menu></div>
-      <div class="relative w-full flex justify-center items-center ">
-        <Body></Body>
+      <div class="relative  ">
+           <router-view></router-view>
         </div>
       
 
@@ -11,9 +11,10 @@
 </template>
 <script>
 
-   
+
 
 export default {
+
   
   data(){
     return{

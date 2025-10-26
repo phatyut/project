@@ -1,1 +1,12 @@
 @import "tailwindcss";
+@layer base{
+    .google map *{
+        border-style: double;
+    }
+};
+@layer theme{
+
+};
+@layer utilities{
+    
+}
