@@ -31,8 +31,7 @@ app.use(router);
 
 
 
-app.component("Body",Body)
+
 app.component("Head",Head)
-app.component("Menu",Menu)
 
 app.mount('#app')

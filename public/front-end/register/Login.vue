@@ -11,7 +11,7 @@
                             <div class="flex flex-row  pt-[20px] items-center gap-4 ">
                                 <div  class="flex flex-col gap-y-1.5">
                                     <div class="text-[12px] font-semibold">First Name: </div>
-                                    <div><input type="text" class="text-center border border-gray-500 text-[12px] p-1 w-[150px] h-[28px] rounded-[20px]"></div>
+                                    <div><input type="text" class="text-center border border-gray-500 text-[12px] p-1 w-[150px] h-[28px] rounded-[20px] border outline-none shadow "></div>
                                 </div>
                                 <div class="flex flex-col gap-y-1.5">
                                     <div class="text-[12px] font-semibold">Last Name: </div>
@@ -55,7 +55,7 @@
                           
                             
                             <div class="w-[100%] flex flex-col pt-[25px] justify-center items-center gap-2.5 ">
-                                <div><button class=" text-[14px] rounded-[3px] px-14 py-1 bg-green-700 font-bold">Sign In</button></div>
+                                <div><button class=" text-[14px] rounded-[3px] px-14 py-1 bg-green-700 font-bold" @click="hidelogin">Sign In</button></div>
                                 <div><button class=" text-[14px] text-blue-600 ">Aleady have an accound?</button></div>
                             </div>
 
@@ -70,7 +70,7 @@
             <div class="w-[55%] h-[98%] z-20 flex justify-end pt-[50px] text-white">
                 <div class="w-[75%] flex flex-col gap-y-14">
                    
-                    <div class="text-center">Welcom to KTA login</div>
+                    <div class="text-center">Create your free account.</div>
                     <div>
                         <div class="text-center">.Sale Production</div>
                         <div class="text-center">.Maintenance Service</div>
@@ -93,11 +93,11 @@
             }
         },methods:{
           
-            // clicklogin(){
-            //     this.showlogin=true
-            // },hidelogin(){
-            //     this.showlogin=false
-            // }
+            clicklogin(){
+                this.showlogin=true
+            },hidelogin(){
+                this.showlogin=false
+            }
         }
     }
 </script>

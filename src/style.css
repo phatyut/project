@@ -20,11 +20,18 @@
   }
 };
 @layer theme{
-  
+
 };
 @layer utilities{
+    .bg-custom {
+    background-image: url('/public/images/keyboard.png');
     
+  }
 };
+:root{
+    --acme-canvas-color: oklch(0.967 0.003 264.542);
+}
 @theme{
-   --shadow-yut: 1px 0px 1px  rgba(0, 0, 0, 0);
+  --color-mode:#A64451;
+  --color-modes:#F5F5F5
 }

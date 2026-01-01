@@ -1,30 +1,34 @@
-<template>
-  <div class="bg-blue-300 flex flex-col gap-y-7 dark:bg-black dark:text-white" >
-      <div class="relative w-full flex justify-center items-center"><Head></Head></div>
-      <div class="relative w-full flex justify-center items-center shadow shadow-blue-100 "><Menu></Menu></div>
-      <div class="relative  ">
-           <router-view></router-view>
-        </div>
-      
 
-  </div>
+
+
+
+<template>
+  <!-- to-[#A64451] -->
+  
+<div class=" bg-linear-to-l from-blue-900 via-blue-700">
+      <div class="   ">
+        <div><Head></Head></div>
+      </div>
+      <div>
+        <Menu></Menu>
+      </div>
+
+      <div class=" w-[100%] flex justify-center items-center">
+        <div class="w-[80%]">
+            <router-view></router-view>
+          </div>
+        </div>
+</div>
+ 
 </template>
 <script>
+  import Menu from '../public/front-end/menu/Menu.vue';
+  export default{
+    components:{Menu},
+    data(){
+      return {
 
-
-
-export default {
-
-  
-  data(){
-    return{
-      counter:0
-    }
-  },methods:{
-    clickcounter(){
-      this.counter++;
+      }
     }
   }
-
-}
 </script>
