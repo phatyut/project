@@ -1,5 +1,5 @@
 <template>
-   <div class=" bg-white flex items-center h-[100px]">
+   <div class=" bg-gray-100 flex items-center h-[100px]">
         <div class="w-[100%]  flex  items-center">
             
                 <div class="flex w-full items-center">

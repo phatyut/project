@@ -1,6 +1,30 @@
+<!-- 
 
+______________note: this is home page file ______________
+1
+
+ -->
 <template>
-  <div class="h-auo  pt-9">
+  <div class="h-auo  pt-20 ">
+    <!-- scroll in homepage from Update_scroll_home.vue file -->
+    <section>
+        <div class=" relative w-[100%]  h-30 flex justify-center items-center   ">
+                  <div class="relative w-[80%]   overflow-hidden shadow-love  shadow-white  flex gap-10 h-30 rounded-[10px]  
+                               ">
+                               <div class=" flex animate-scrollX">
+
+                                 <Update_scroll_home 
+                                 v-for="element in items" 
+                                 :key="element" 
+                                 :giveimage="element.src">
+                                </Update_scroll_home>                                                  
+                              </div>
+                              <div class=" absolute top-[0%] left-[0%] h-30 w-70 bg-linear-to-r from-[#a74451] to-100% to-transparent "></div>
+                              <div class=" absolute top-0 right-[0%] h-30 w-96 bg-linear-to-l from-[#a74451] to-transparent"></div>
+                  </div>
+
+        </div>
+    </section>
 
       
     <!-- Hero Section -->
@@ -13,7 +37,7 @@
         </button>
       </div>
       <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center items-center">
-        <img src="../../images/v380camera.png" alt="Tech Support" class="w-[70%] rounded-lg drop-shadow-xl drop-shadow-white" />
+        <img src="../../images/v380camera.png" alt="Tech Support" class="w-[80%] rounded-lg " />
       </div>
     </section>
 
@@ -90,6 +114,33 @@
     </section>
   </div>
 </template>
+<script>
+import Update_scroll_home from './Update_scroll_home.vue';
+
+
+//  _____________________bind images _____________________
+import dc from "../../images/dc.png";
+
+export default{
+  components:{Update_scroll_home},
+  data(){
+    return {
+     items:[
+        {src:dc},
+        {src:dc},
+        {src:dc},
+        {src:dc},
+        {src:dc},
+        {src:dc},
+        {src:dc},
+        {src:dc},
+        {src:dc},
+        {src:dc},
+     ]
+    }
+  }
+}
+</script>
 
 
 

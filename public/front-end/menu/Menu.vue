@@ -2,9 +2,9 @@
     <div class=" relative h-[30px] w-[100%] flex justify-center  items-center   ">
         <div class="w-[90%] flex  items-center justify-between  text-white  rounded-[2px]">
            
-            <div class=" flex text-[13px] rounded-[2px] *:font-serif *:text-blue-900 *:font-semibold
+            <div class=" flex text-[12px] rounded-[2px]  *:text-white *:font-semibold
                         *:text-shadow-black  *:bg-linear-to-br *:from-[#8f3541] *:to-[#CC8490] 
-                        *:px-2.5 *:py-1 gap-1.5 *:rounded-2xl">
+                        *:px-2.5 *:py-1 gap-1.5 *:rounded-[4px] *:shadow-2xs *:shadow-white">
                 <div><router-link to="/home">Home Page</router-link></div>
                 <div><router-link to="/production">Sevice</router-link></div>
                 <div><router-link to="">View Mode</router-link></div>

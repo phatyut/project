@@ -16,11 +16,11 @@ import { createWebHashHistory, createRouter} from 'vue-router';
 const router = createRouter({
     history:createWebHashHistory(),
     routes:[
-         {path:"/",component:Home},
-        {path:"/home",component:Home},
-        {path:"/production",component:Production},
-        {path:"/login",component:Login},
-        {path:"/signup",component:Signin},
+            {path:"/",redirect:"/Home"},
+            {path:"/home",component:Home},
+            {path:"/production",component:Production},
+            {path:"/login",component:Login},
+            {path:"/signup",component:Signin},
     ]
 })
 
